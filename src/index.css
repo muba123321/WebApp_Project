@@ -1,0 +1,136 @@
+.navBar {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  font-size: medium;
+  background-color: darkgray;
+}
+
+.menuItem {
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #c2c2c2;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f7;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fetch-button:hover {
+  background-color: #45a049;
+}
+
+.loader {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.weather-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.city-name {
+  font-size: 2rem;
+  color: #333;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.description,
+.temperature,
+.feels-like,
+.humidity,
+.wind,
+.visibility {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.alert-section {
+  background-color: #ffcccb;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.alert {
+  margin-bottom: 10px;
+}
+
+.daily-forecast,
+.hourly-forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day-card,
+.hour-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.day-card img,
+.hour-card img {
+  width: 50px;
+  height: 50px;
+}
